@@ -1,6 +1,9 @@
 # Changelog
 ## [Unreleased]
 
+### Added
+- **Developer Tooling (Test Conveyor):** Added `tests/conveyor/` — an autonomous end-to-end pipeline (`run_conveyor.sh` + `smoke_test.py`) that boots RimWorld via Steam, starts a colony headlessly through `POST /api/v1/game/start/devquick`, and smoke-checks core endpoints (version, game state, colonists, maps, game speed, tick progression, save). Standard-library Python only; exit code 0 = all checks pass.
+
 ## v1.10.0
 
 ### Added
